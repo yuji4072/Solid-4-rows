@@ -73,6 +73,8 @@ public class SquareCtrl : MonoBehaviour
         //countを1上げる
         count = count + 1;
 
+        Debug.Log("turn");
+
         judge.judge();
         
     }
