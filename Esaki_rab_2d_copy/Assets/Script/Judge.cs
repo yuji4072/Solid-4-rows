@@ -211,7 +211,7 @@ public class Judge : MonoBehaviour
 
     //勝敗を判定し、勝者が決まった場合数値とともにGameMasterを呼び出す。
     public void toGameMaster(int judge){
-        if (judge == 0) gamemaster.GameOver(0);
-        else if(judge == 4) gamemaster.GameOver(1);
+        if (judge == 0) gamemaster.GameOver(1);
+        else if(judge == 4) gamemaster.GameOver(2);
     }
 }
