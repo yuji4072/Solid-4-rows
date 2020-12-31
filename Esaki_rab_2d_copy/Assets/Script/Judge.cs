@@ -26,6 +26,7 @@ public class Judge : MonoBehaviour
                         break;
                     }
                 }
+
                 //いずれ揃った列のデータも引数として渡したいので、一回一回関数で判定する。
                 toGameMaster(judge);
             }

@@ -22,6 +22,7 @@ public class SquareCtrl : MonoBehaviour
     ArrayCube cube = new ArrayCube(); 
     Judge judge = new Judge();
     //TurnColor turncolor = new TurnColor();
+    BallMake ballmake = new BallMake();
    
 
     //"count % 2"することでどちらのturn(1p:0 2p:1)か取得できる
@@ -65,6 +66,10 @@ public class SquareCtrl : MonoBehaviour
 
         //指定されたキューへ放り込む
         cube.EnterArray(x, y, turn); 
+
+        //立体4目をジェネレートする関数を呼び出す
+        ballmake.makeboll(x,y,turn);
+
 
         // turnをTurnColorへ告げる(注意！　このプログラムを入れるとUnityがクラッシュする！！！！)
         //↑解決、０除算をしていたことが原因だった（嘘です）解決しません

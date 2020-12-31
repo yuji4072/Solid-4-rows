@@ -29,16 +29,16 @@ public class ArrayCube : MonoBehaviour
     //キュー（三次元配列）に数値（0 , 1）を格納する
     public void EnterArray(int x, int y,int turn){
 
-        if(cube[x][y][3] == 2){
+        if(cube[x][y][3] == 9){
             cube[x][y][3] = turn;
         }
-        else if(cube[x][y][2] == 2){
+        else if(cube[x][y][2] == 9){
             cube[x][y][2] = turn;
         }
-        else if(cube[x][y][1] == 2){
+        else if(cube[x][y][1] == 9){
             cube[x][y][1] = turn;
         }
-        else if(cube[x][y][0] == 2){
+        else if(cube[x][y][0] == 9){
             cube[x][y][0] = turn;
         }
         else{
