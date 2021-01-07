@@ -72,7 +72,15 @@ public class Destroy : MonoBehaviour
                 Destroy(obj);
             }
         }
-        if(x == 1 && y == 2){
+        if (x == 1 && y == 1){
+            q10.Enqueue(number);
+            tmp = q10.Dequeue();
+            if (tmp != "0"){
+                GameObject obj = GameObject.Find(tmp + "(Clone)");
+                Destroy(obj);
+            }
+        }
+        if (x == 1 && y == 2){
             q12.Enqueue(number);
             tmp = q12.Dequeue();
             if(tmp != "0"){
