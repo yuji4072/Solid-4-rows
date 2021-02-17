@@ -8,7 +8,7 @@ public class BallMake : MonoBehaviour
     //public GameObject BallsObjprefab;
     //public GameObject BallsObj;
     
-    Destroy destroy = new Destroy();
+    Destroyer destroy = new Destroyer();
 
     static int number = 0;
 
@@ -37,7 +37,7 @@ public class BallMake : MonoBehaviour
             Quaternion.identity);
         }
 
-        destroy.destroy(x,y, obj.name);
+        destroy.destroy(x, y, obj.name);
 
         number = number + 1;
     }

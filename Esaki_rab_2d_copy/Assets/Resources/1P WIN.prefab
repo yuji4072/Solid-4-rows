@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4889629052337901230}
   - component: {fileID: 8253978192810941390}
   m_Layer: 0
-  m_Name: 1P WIN(Clone)
+  m_Name: 1P WIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
